@@ -50,6 +50,8 @@ pip install -r requirements.txt
 ```
 
 # PIP virtualenv setup with requirements.txt
+This method is probably the most portable, as anyone with python will be able to use it. However, unlike with `conda`, using only `pip` restricts one to python packages.
+
 Execute:
 ```
 python -m venv venv # Replace the second `venv` with the directory in which you want to set up the virtual environment.
