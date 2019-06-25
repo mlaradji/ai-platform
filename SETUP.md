@@ -1,3 +1,5 @@
+As `ai-platform` does not currently have a `conda.yaml` file, you should use either 'Anaconda setup with requirements.txt' or 'PIP virtualenv setup with requirements.txt'. Some of the tasks in `ai-platform` do have a `conda.yaml` file, and for those you can follow 'Anaconda setup with conda.yaml'.
+
 # Anaconda setup with conda.yaml
 1. Download [anaconda](https://www.anaconda.com/distribution/) (Python 3.7) and run the installer:
 
@@ -47,7 +49,7 @@ conda install python # If the environment doesn't already include python.
 pip install -r requirements.txt
 ```
 
-# PIP virtualenv setup
+# PIP virtualenv setup with requirements.txt
 Execute:
 ```
 python -m venv venv # Replace the second `venv` with the directory in which you want to set up the virtual environment.
