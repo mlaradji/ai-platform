@@ -1,6 +1,9 @@
+# Environment Setup
+
+## Import environment
 As `ai-platform` does not currently have a `conda.yaml` file, you should use either 'Anaconda setup with requirements.txt' or 'PIP virtualenv setup with requirements.txt'. Some of the tasks in `ai-platform` do have a `conda.yaml` file, and for those you can follow 'Anaconda setup with conda.yaml'.
 
-# Anaconda setup with conda.yaml
+### Anaconda setup with conda.yaml
 1. Download [anaconda](https://www.anaconda.com/distribution/) (Python 3.7) and run the installer:
 
 ```
@@ -34,13 +37,13 @@ To keep the `ai-platform` intact, you can clone it via
 conda create -n newenvironment --clone ai-platform
 ```
 
-4. If you want to export your current environment (to upload to the github repo, for example), do:
+4. 
 ```
 conda activate yourenvironment
 conda env export > conda.yaml
 ```
 
-# Anaconda setup with requirements.txt
+### Anaconda setup with requirements.txt
 Follow step 1 above. Then, execute the following commands:
 ```
 conda create -n ai-platform
@@ -49,7 +52,7 @@ conda install python # If the environment doesn't already include python.
 pip install -r requirements.txt
 ```
 
-# PIP virtualenv setup with requirements.txt
+### PIP virtualenv setup with requirements.txt
 This method is probably the most portable, as anyone with python will be able to use it. However, unlike with `conda`, using only `pip` restricts one to python packages.
 
 Execute:
@@ -57,4 +60,16 @@ Execute:
 python -m venv venv # Replace the second `venv` with the directory in which you want to set up the virtual environment.
 source venv/bin/activate # Replace `venv` as above.
 pip install -r requirements.txt
+```
+
+## Export environment
+If you want to export your current environment (to upload to the github repo, for example), do the following for pip:
+```
+source yourvenv/bin/activate # Switch to your pip virtualenv first
+pip freeze > requirements.txt
+```
+For conda, use:
+```
+conda activate yourenvironment # Switch to your conda env first
+conda env export > conda.yaml
 ```
