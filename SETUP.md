@@ -37,12 +37,6 @@ To keep the `ai-platform` intact, you can clone it via
 conda create -n newenvironment --clone ai-platform
 ```
 
-4. 
-```
-conda activate yourenvironment
-conda env export > conda.yaml
-```
-
 ### Anaconda setup with requirements.txt
 Follow step 1 above. Then, execute the following commands:
 ```
