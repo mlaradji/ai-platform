@@ -5,9 +5,6 @@ yolov3.weights
 *.png
 *.csv
 
-# Submodules
-tasks/computer-vision/image-generation/text-to-image/AttnGAN
-
 # MLFlow
 mlruns/
 
