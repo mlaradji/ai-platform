@@ -1,3 +1,4 @@
 [submodule "tasks/computer-vision/image-generation/text-to-image/AttnGAN"]
 	path = tasks/computer-vision/image-generation/text-to-image/AttnGAN
 	url = https://github.com/mlaradji/AttnGAN.git
+	branch = mlflow
