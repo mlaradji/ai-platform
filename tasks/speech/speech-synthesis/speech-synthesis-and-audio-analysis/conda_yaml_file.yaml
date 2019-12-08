@@ -1,0 +1,13 @@
+name: conda_yaml_file
+channels:
+  - defaults
+dependencies:
+  - python==3.7.3
+  - aubio==0.4.9
+  - pip:
+    - mlflow==1.0.0
+    - gTTS==2.0.4
+    - argparse==1.4.0
+    - SoundFile==0.10.2
+    - mutagen==1.42.0
+    - scikit-sound==0.2.3

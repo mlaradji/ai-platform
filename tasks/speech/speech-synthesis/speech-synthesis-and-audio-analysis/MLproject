@@ -1,0 +1,13 @@
+name: mlflow_MLproject_file
+
+conda_env: conda_yaml_file.yaml
+
+
+entry_points:
+  main:
+    parameters:
+      utterences_text_data_file_path : {type: str, default: "utterences.txt"}
+      
+      
+    command: "python speech_synthesis_and_audio_analysis.py --utterences_text_data_file_path {utterences_text_data_file_path}"
+
